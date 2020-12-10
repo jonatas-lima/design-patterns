@@ -3,6 +3,9 @@ package duck;
 import strategy.FlyStrategy;
 import strategy.QuackStrategy;
 
+/**
+ * Classe que representa a abstração de um pato
+ */
 public abstract class Duck {
 
 	private FlyStrategy flyStrategy;

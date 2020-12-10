@@ -3,9 +3,9 @@ package duck;
 import strategy.NoFlying;
 import strategy.SilentQuack;
 
-public class WoodDuck extends Duck {
+public class RubberDuck extends Duck {
 
-	public WoodDuck() {
+	public RubberDuck() {
 		super(new NoFlying(), new SilentQuack());
 	}
 

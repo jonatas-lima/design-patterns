@@ -3,13 +3,14 @@ package main;
 import duck.BionicDuck;
 import duck.Duck;
 import duck.MallardDuck;
-import duck.WoodDuck;
+import duck.RubberDuck;
+import strategy.FlyWithRocket;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Duck mallardDuck = new MallardDuck();
-		Duck woodDuck = new WoodDuck();
+		Duck woodDuck = new RubberDuck();
 		Duck bionicDuck = new BionicDuck();
 		
 		System.out.print("Mallard flying: ");
@@ -31,6 +32,10 @@ public class Main {
 
 		System.out.print("Bionic quacking: ");
 		bionicDuck.quack();
+		
+		// o comportamento pode mudar em tempo de execução
+		mallardDuck.setFlyStrategy(new FlyWithRocket());
+		mallardDuck.fly();
 	}
 
 }
