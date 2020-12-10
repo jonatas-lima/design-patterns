@@ -1,5 +1,13 @@
 package decorator;
 
+import beverage.Beverage;
+import beverage.DarkRoast;
+import beverage.Espresso;
+import beverage.HouseBlend;
+import condiment.Mocha;
+import condiment.Soy;
+import condiment.Whip;
+
 public class StarBuzz {
 	public static void main(String args[]) {
 		Beverage beverage = new Espresso();
