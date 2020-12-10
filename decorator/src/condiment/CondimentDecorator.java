@@ -1,4 +1,6 @@
-package beverage;
+package condiment;
+
+import beverage.Beverage;
 
 public abstract class CondimentDecorator extends Beverage {
 

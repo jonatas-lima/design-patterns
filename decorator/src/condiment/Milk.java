@@ -1,7 +1,6 @@
 package condiment;
 
 import beverage.Beverage;
-import beverage.CondimentDecorator;
 
 public class Milk extends CondimentDecorator {
 	
