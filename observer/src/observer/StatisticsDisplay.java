@@ -33,7 +33,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 	}
 
 	@Override
-	public void update(Double temperature, Double humidity, Double pressure) {
+	public void update(Double temperature, Double humidity) {
 		this.temperatures.add(temperature);
 		
 		display();
