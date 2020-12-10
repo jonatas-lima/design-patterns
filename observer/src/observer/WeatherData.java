@@ -35,7 +35,7 @@ public class WeatherData implements Observable {
 		this.observers.forEach(o -> o.update(temperature, humidity));
 	}
 
-	public void measurementsChanged() {
+	private void measurementsChanged() {
 		notifyObservers();
 	}
 	
